@@ -1,75 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#070B14"/>
-      <stop offset="100%" stop-color="#0F172A"/>
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="720" rx="28" fill="url(#bg)"/>
-  <text x="80" y="88" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" fill="#F8FAFC">Validation — Did the Fixes Actually Work?</text>
-  <text x="80" y="130" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#94A3B8">Original attack behavior repeated after remediation</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760">
+  <rect width="1600" height="760" fill="#131313"/>
+  <rect x="18" y="18" width="1564" height="724" rx="38" fill="none" stroke="#EFEFEF" stroke-width="1.2"/>
 
-  <circle cx="1330" cy="130" r="86" fill="#052E2B" stroke="#2DD4BF" stroke-width="3"/>
-  <text x="1330" y="125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#5EEAD4">8/8</text>
-  <text x="1330" y="160" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#99F6E4">VALIDATED</text>
+  <text x="85" y="92" font-family="'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="31" font-weight="700" fill="#FFC000">validation</text>
+  <text x="85" y="138" font-family="'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="27" font-weight="700" fill="#EFEFEF">Did the Fixes Actually Work?</text>
 
-  <g font-family="Arial, Helvetica, sans-serif">
-    <g transform="translate(90,220)">
-      <rect width="650" height="82" rx="16" fill="#0B1220" stroke="#334155"/>
-      <text x="28" y="34" font-size="20" font-weight="700" fill="#E2E8F0">KF-001 · Anonymous SMB Access</text>
-      <text x="28" y="61" font-size="17" fill="#94A3B8">Retest result: access blocked</text>
-      <text x="610" y="50" text-anchor="end" font-size="22" font-weight="800" fill="#5EEAD4">PASS</text>
+  <text x="1340" y="110" text-anchor="middle" font-family="'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="58" font-weight="700" fill="#FFC000">8/8</text>
+  <text x="1340" y="145" text-anchor="middle" font-family="'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="17" fill="#EFEFEF">validated</text>
+
+  <g font-family="'Cascadia Mono', Consolas, 'Courier New', monospace">
+    <g transform="translate(85,210)">
+      <rect width="690" height="82" rx="14" fill="none" stroke="#EFEFEF"/>
+      <text x="25" y="34" font-size="18" fill="#B7B7B7">Shared SMB</text>
+      <text x="650" y="51" text-anchor="end" font-size="21" font-weight="700" fill="#92D050">BLOCKED</text>
     </g>
-
-    <g transform="translate(860,220)">
-      <rect width="650" height="82" rx="16" fill="#0B1220" stroke="#334155"/>
-      <text x="28" y="34" font-size="20" font-weight="700" fill="#E2E8F0">KF-002 · Legacy Credential Exposure</text>
-      <text x="28" y="61" font-size="17" fill="#94A3B8">Retest result: original path removed</text>
-      <text x="610" y="50" text-anchor="end" font-size="22" font-weight="800" fill="#5EEAD4">PASS</text>
+    <g transform="translate(825,210)">
+      <rect width="690" height="82" rx="14" fill="none" stroke="#EFEFEF"/>
+      <text x="25" y="34" font-size="18" fill="#B7B7B7">Anonymous FTP</text>
+      <text x="650" y="51" text-anchor="end" font-size="21" font-weight="700" fill="#92D050">BLOCKED</text>
     </g>
-
-    <g transform="translate(90,325)">
-      <rect width="650" height="82" rx="16" fill="#0B1220" stroke="#334155"/>
-      <text x="28" y="34" font-size="20" font-weight="700" fill="#E2E8F0">KF-003 · CubeCart Stored XSS</text>
-      <text x="28" y="61" font-size="17" fill="#94A3B8">Retest result: no JavaScript execution</text>
-      <text x="610" y="50" text-anchor="end" font-size="22" font-weight="800" fill="#5EEAD4">PASS</text>
+    <g transform="translate(85,320)">
+      <rect width="690" height="82" rx="14" fill="none" stroke="#EFEFEF"/>
+      <text x="25" y="34" font-size="18" fill="#B7B7B7">Old Credentials</text>
+      <text x="650" y="51" text-anchor="end" font-size="21" font-weight="700" fill="#92D050">REJECTED</text>
     </g>
-
-    <g transform="translate(860,325)">
-      <rect width="650" height="82" rx="16" fill="#0B1220" stroke="#334155"/>
-      <text x="28" y="34" font-size="20" font-weight="700" fill="#E2E8F0">KF-004 · Horilla Default Credential</text>
-      <text x="28" y="61" font-size="17" fill="#94A3B8">Retest result: old credential rejected</text>
-      <text x="610" y="50" text-anchor="end" font-size="22" font-weight="800" fill="#5EEAD4">PASS</text>
+    <g transform="translate(825,320)">
+      <rect width="690" height="82" rx="14" fill="none" stroke="#EFEFEF"/>
+      <text x="25" y="34" font-size="18" fill="#B7B7B7">Stored XSS</text>
+      <text x="650" y="51" text-anchor="end" font-size="21" font-weight="700" fill="#92D050">NO EXECUTION</text>
     </g>
-
-    <g transform="translate(90,430)">
-      <rect width="650" height="82" rx="16" fill="#0B1220" stroke="#334155"/>
-      <text x="28" y="34" font-size="20" font-weight="700" fill="#E2E8F0">KF-005 · Horilla Unsafe Evaluation</text>
-      <text x="28" y="61" font-size="17" fill="#94A3B8">Retest result: invalid input rejected</text>
-      <text x="610" y="50" text-anchor="end" font-size="22" font-weight="800" fill="#5EEAD4">PASS</text>
+    <g transform="translate(85,430)">
+      <rect width="690" height="82" rx="14" fill="none" stroke="#EFEFEF"/>
+      <text x="25" y="34" font-size="18" fill="#B7B7B7">Horilla RCE</text>
+      <text x="650" y="51" text-anchor="end" font-size="21" font-weight="700" fill="#92D050">REJECTED</text>
     </g>
-
-    <g transform="translate(860,430)">
-      <rect width="650" height="82" rx="16" fill="#0B1220" stroke="#334155"/>
-      <text x="28" y="34" font-size="20" font-weight="700" fill="#E2E8F0">KF-006 · Anonymous FTP</text>
-      <text x="28" y="61" font-size="17" fill="#94A3B8">Retest result: 530 Login incorrect</text>
-      <text x="610" y="50" text-anchor="end" font-size="22" font-weight="800" fill="#5EEAD4">PASS</text>
-    </g>
-
-    <g transform="translate(90,535)">
-      <rect width="650" height="82" rx="16" fill="#0B1220" stroke="#334155"/>
-      <text x="28" y="34" font-size="20" font-weight="700" fill="#E2E8F0">KF-007 · Exposed Plaintext Credential</text>
-      <text x="28" y="61" font-size="17" fill="#94A3B8">Retest result: old password rejected</text>
-      <text x="610" y="50" text-anchor="end" font-size="22" font-weight="800" fill="#5EEAD4">PASS</text>
-    </g>
-
-    <g transform="translate(860,535)">
-      <rect width="650" height="82" rx="16" fill="#0B1220" stroke="#334155"/>
-      <text x="28" y="34" font-size="20" font-weight="700" fill="#E2E8F0">KF-008 · phpMyFAQ Backup Authorization</text>
-      <text x="28" y="61" font-size="17" fill="#94A3B8">Retest result: privileged action denied</text>
-      <text x="610" y="50" text-anchor="end" font-size="22" font-weight="800" fill="#5EEAD4">PASS</text>
+    <g transform="translate(825,430)">
+      <rect width="690" height="82" rx="14" fill="none" stroke="#EFEFEF"/>
+      <text x="25" y="34" font-size="18" fill="#B7B7B7">Unauthorized Backup</text>
+      <text x="650" y="51" text-anchor="end" font-size="21" font-weight="700" fill="#92D050">DENIED</text>
     </g>
   </g>
 
-  <text x="800" y="680" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#CBD5E1">A patch is not proof. Retesting is proof.</text>
+  <line x1="85" y1="570" x2="1515" y2="570" stroke="#666666" stroke-width="1"/>
+  <text x="85" y="626" font-family="'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="19" fill="#FFC000">khaled@CC12~$ result</text>
+  <text x="85" y="672" font-family="'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="22" fill="#EFEFEF">A patch is not proof. Retesting is proof.</text>
 </svg>
