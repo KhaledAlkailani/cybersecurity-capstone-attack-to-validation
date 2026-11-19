@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#67E8F9"/>
+    </marker>
+    <marker id="p" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#C4B5FD"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <text x="80" y="88" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" fill="#F8FAFC">Server 1 — Two Paths From One Exposure</text>
+  <text x="80" y="130" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#94A3B8">192.168.100.250 · 07 October 2026</text>
+
+  <rect x="570" y="175" width="460" height="86" rx="18" fill="#0E7490"/>
+  <text x="800" y="210" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" fill="#ECFEFF">OPEN SMB SHARE</text>
+  <text x="800" y="242" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#CFFAFE">unauthenticated guest access</text>
+
+  <path d="M800 261 V330 H420 V360" fill="none" stroke="#67E8F9" stroke-width="4" marker-end="url(#a)"/>
+  <path d="M800 261 V330 H1180 V360" fill="none" stroke="#C4B5FD" stroke-width="4" marker-end="url(#p)"/>
+
+  <text x="420" y="324" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#67E8F9">PATH A — CUBECART</text>
+  <text x="1180" y="324" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#C4B5FD">PATH B — HORILLA</text>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="220" y="360" width="400" height="80" rx="16" fill="#0B1220" stroke="#22D3EE"/>
+    <text x="420" y="408" text-anchor="middle" font-size="22" fill="#E2E8F0">Legacy Authentication Files</text>
+    <line x1="420" y1="440" x2="420" y2="493" stroke="#67E8F9" stroke-width="3" marker-end="url(#a)"/>
+
+    <rect x="220" y="500" width="400" height="80" rx="16" fill="#0B1220" stroke="#22D3EE"/>
+    <text x="420" y="548" text-anchor="middle" font-size="22" fill="#E2E8F0">MD5 Credential Recovery</text>
+    <line x1="420" y1="580" x2="420" y2="633" stroke="#67E8F9" stroke-width="3" marker-end="url(#a)"/>
+
+    <rect x="220" y="640" width="400" height="80" rx="16" fill="#0B1220" stroke="#22D3EE"/>
+    <text x="420" y="688" text-anchor="middle" font-size="22" fill="#E2E8F0">CubeCart Admin Access</text>
+    <line x1="420" y1="720" x2="420" y2="773" stroke="#67E8F9" stroke-width="3" marker-end="url(#a)"/>
+
+    <rect x="220" y="780" width="400" height="80" rx="16" fill="#083344" stroke="#22D3EE" stroke-width="2"/>
+    <text x="420" y="830" text-anchor="middle" font-size="24" font-weight="800" fill="#67E8F9">STORED XSS</text>
+
+    <rect x="980" y="360" width="400" height="80" rx="16" fill="#0B1220" stroke="#8B5CF6"/>
+    <text x="1180" y="408" text-anchor="middle" font-size="22" fill="#E2E8F0">HR Deployment Information</text>
+    <line x1="1180" y1="440" x2="1180" y2="493" stroke="#C4B5FD" stroke-width="3" marker-end="url(#p)"/>
+
+    <rect x="980" y="500" width="400" height="80" rx="16" fill="#0B1220" stroke="#8B5CF6"/>
+    <text x="1180" y="548" text-anchor="middle" font-size="22" fill="#E2E8F0">Default Admin Login</text>
+    <line x1="1180" y1="580" x2="1180" y2="633" stroke="#C4B5FD" stroke-width="3" marker-end="url(#p)"/>
+
+    <rect x="980" y="640" width="400" height="80" rx="16" fill="#0B1220" stroke="#8B5CF6"/>
+    <text x="1180" y="674" text-anchor="middle" font-size="21" fill="#E2E8F0">Unsafe is_active Handling</text>
+    <text x="1180" y="704" text-anchor="middle" font-size="18" fill="#94A3B8">Python eval()</text>
+    <line x1="1180" y1="720" x2="1180" y2="773" stroke="#C4B5FD" stroke-width="3" marker-end="url(#p)"/>
+
+    <rect x="980" y="780" width="400" height="80" rx="16" fill="#2E1065" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="1180" y="830" text-anchor="middle" font-size="24" font-weight="800" fill="#C4B5FD">RCE INSIDE CONTAINER</text>
+  </g>
+</svg>
