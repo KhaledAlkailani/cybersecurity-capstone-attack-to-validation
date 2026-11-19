@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="55%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="500" rx="28" fill="url(#bg)"/>
+  <circle cx="1320" cy="85" r="220" fill="#8B5CF6" opacity="0.06"/>
+  <circle cx="1430" cy="410" r="280" fill="#22D3EE" opacity="0.05"/>
+
+  <g opacity="0.22" stroke="#334155" stroke-width="1">
+    <path d="M70 92 H1530M70 160 H1530M70 228 H1530M70 296 H1530M70 364 H1530M70 432 H1530"/>
+    <path d="M180 52 V448M360 52 V448M540 52 V448M720 52 V448M900 52 V448M1080 52 V448M1260 52 V448M1440 52 V448"/>
+  </g>
+
+  <rect x="82" y="76" width="10" height="348" rx="5" fill="url(#accent)" filter="url(#glow)"/>
+
+  <text x="135" y="155" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#94A3B8" letter-spacing="4">CYBERSECURITY CAPSTONE</text>
+  <text x="135" y="235" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="800" fill="#F8FAFC">Attack → Evidence → Fix → Proof</text>
+  <text x="135" y="292" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#CBD5E1">End-to-end assessment across two Linux servers</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <rect x="135" y="338" width="210" height="54" rx="27" fill="#0F172A" stroke="#22D3EE" stroke-width="1.5"/>
+    <text x="240" y="373" text-anchor="middle" fill="#67E8F9">2 SERVERS</text>
+
+    <rect x="365" y="338" width="240" height="54" rx="27" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="485" y="373" text-anchor="middle" fill="#7DD3FC">8 FINDINGS</text>
+
+    <rect x="625" y="338" width="270" height="54" rx="27" fill="#0F172A" stroke="#8B5CF6" stroke-width="1.5"/>
+    <text x="760" y="373" text-anchor="middle" fill="#C4B5FD">2 ATTACK PATHS</text>
+
+    <rect x="915" y="338" width="290" height="54" rx="27" fill="#0F172A" stroke="#A78BFA" stroke-width="1.5"/>
+    <text x="1060" y="373" text-anchor="middle" fill="#DDD6FE">8 VALIDATED FIXES</text>
+  </g>
+
+  <text x="1510" y="455" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#64748B">Khaled AlKailani</text>
+</svg>
