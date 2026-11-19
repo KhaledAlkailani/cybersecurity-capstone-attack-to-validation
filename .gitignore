@@ -1,0 +1,30 @@
+# Sensitive material
+*.pcap
+*.pcapng
+*.key
+*.pem
+*.p12
+*.pfx
+*.env
+.env.*
+secrets/
+private/
+raw-evidence/
+config-backups/
+
+# Archives that may contain sensitive evidence
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*~
