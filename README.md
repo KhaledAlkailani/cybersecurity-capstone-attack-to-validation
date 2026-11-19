@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="assets/banner.svg" alt="Cybersecurity Capstone — Attack to Validation" width="100%">
+
+<br>
+
 # Cybersecurity Capstone
 ### From Attack Path to Validated Remediation
 
@@ -54,6 +58,12 @@ The final result was **eight security findings across two connected attack stori
 | **Server 1 — 192.168.100.250** | Apache, Samba, OpenLDAP, PostgreSQL, MariaDB | CubeCart, Horilla |
 | **Server 2 — 192.168.100.107** | vsftpd, OpenSSH, Apache, MariaDB | phpMyFAQ |
 
+<div align="center">
+
+<img src="assets/environment-architecture.svg" alt="Two-server cybersecurity assessment architecture" width="100%">
+
+</div>
+
 ---
 
 ## Attack Paths
@@ -84,6 +94,12 @@ Open SMB Share ──────────┤     CubeCart Admin
 
 The SMB share did **not** directly provide RCE. Its impact came from the information it exposed and the weaknesses that information made reachable.
 
+<div align="center">
+
+<img src="assets/server1-attack-path.svg" alt="Server 1 attack path" width="100%">
+
+</div>
+
 [View Server 1 write-ups →](server-1/README.md)
 
 ### Server 2
@@ -101,6 +117,12 @@ Insufficient Authorization
       ↓
 Sensitive Configuration Backup
 ```
+
+<div align="center">
+
+<img src="assets/server2-attack-path.svg" alt="Server 2 attack path" width="100%">
+
+</div>
 
 [View Server 2 write-ups →](server-2/README.md)
 
@@ -198,6 +220,12 @@ Original Impact No Longer Reproduced
 
 <div align="center">
 
+<img src="assets/validation-summary.svg" alt="Eight of eight remediations validated" width="100%">
+
+<br>
+
+
+
 ## 8 / 8 Remediations Validated
 
 **A patch is not proof. Retesting is proof.**
@@ -240,6 +268,13 @@ D3FEND  → What the defender did about it
 ├── README.md
 ├── SECURITY.md
 ├── .gitignore
+│
+├── assets/
+│   ├── banner.svg
+│   ├── environment-architecture.svg
+│   ├── server1-attack-path.svg
+│   ├── server2-attack-path.svg
+│   └── validation-summary.svg
 │
 ├── docs/
 │   ├── repository-map.md
